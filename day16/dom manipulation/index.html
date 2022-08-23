@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+    
+  </head>
+   <body>
+   <h1 id="title">DOM Manipulation with Forms</h1>
+   <p id="description">The details entered in the form would be displayed in table below </p>
+
+<div  id="container" >
+<form id="form">
+ <div class="form-group"><label>FirstName</label><input type="text" id="first-name" placeholder="First Name" required></div><br>
+  <div class="form-group"><label>LastName</label><input type="text" id="last-name" placeholder="Last Name" required></div><br>
+  <div class="form-group"><label>Address</label><textarea type="text" id="address" placeholder="Address" required></textarea></div><br>
+  <div class="form-group"><label>Pincode</label><input type="text" id="pincode" placeholder="pincode" required></div><br>
+
+  <div class="radio">
+   <label>Select Gender</label><br><br>
+  <input type="radio" id="genmale" name="gender" value="Male"><label >Male</label><br>
+<input type="radio" id="genfemale" name="gender" value="Female"><label >Female</label>
+  </div>
+  
+<br><br>
+  
+  <div class="check">
+    <br><br><br>
+    <label >Food Choice</label><br><br>
+    <input type="checkbox" id="salad" name="food" value="salad"><label for="salad"> Salad</label><br>
+    <input type="checkbox" id="juice" name="food" value="juice"><label for="juice"> Juice</label><br>
+    <input type="checkbox" id="soup" name="food" value="soup"><label for="soup"> Soup</label><br>
+    <input type="checkbox" id="desserts" name="food" value="desserts"><label for="desserts"> Desserts</label><br>
+    <input type="checkbox" id="chats" name="food" value="chats"><label for="chats"> Chats</label><br>
+  
+  </div>
+
+ <br>
+  <button type="button" id="submit" value="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+  <br>
+
+  
+  <div><table class="table">
+  <thead>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Address</th>
+    <th>Pincode</th>
+    <th>Gender</th>
+    <th>Food Choice</th>
+  </tr>
+  </thead>
+  <tbody>
+  </tbody>
+  </table>
+ </div>
+
+</body>
+
+  <script src="script.js"></script>
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</html>
